@@ -137,39 +137,7 @@ print(f"GPU数量: {torch.cuda.device_count()}")
 
 ## 🎯 快速开始
 
-### 1. 下载预训练模型
-
-从百度云下载预训练权重文件：
-- **链接**: [数据集和权重文件](https://pan.baidu.com/s/1cgl94gxSNEW0ZI-wYcZtpQ)
-- **提取码**: `hwsi`
-
-将下载的权重文件放置到 `weights/` 目录下。
-
-### 2. 摄像头实时检测 (推荐)
-
-```bash
-python camera_detection_1.py
-```
-
-这将启动实时疲劳检测，系统会：
-- 🎥 自动调用摄像头
-- 🔍 实时检测面部特征
-- 📊 显示疲劳指标
-- ⚠️ 发出疲劳警告
-
-### 3. 视频文件检测
-
-```bash
-python video_detection.py
-```
-
-### 4. 单张图片测试
-
-```bash
-python Test.py
-```
-
-### 5. 启动Web界面 (可选)
+### 1. 启动Web界面 (推荐)
 
 ```bash
 # 启动后端WebSocket服务
@@ -180,6 +148,18 @@ npm run dev
 ```
 
 然后在浏览器中访问 `http://localhost:3000`
+
+### 2. 视频文件检测
+
+```bash
+python video_detection.py
+```
+
+### 3. 单张图片测试
+
+```bash
+python Test.py
+```
 
 ## 📁 项目结构
 
